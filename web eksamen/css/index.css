@@ -1,0 +1,226 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0ece9;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+
+}
+
+/* Search bar styling */
+.search-bar {
+    width: 100%;
+    max-width: 250px;
+    height: 20px;
+    background: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    border: 2px solid rgb(117, 84, 150);
+    border-radius: 60px;
+    padding: 8px;
+    margin-left: 150px;
+}
+
+.search-bar input {
+    background: transparent;
+    border: 0;
+    width: 200px;
+    outline: none;
+    padding: 10px;
+    font-size: 20px;
+    color: #333;
+}
+
+::placeholder {
+    color: #333
+}
+
+.search-bar button img {
+    width: 20px;
+}
+
+.search-bar button {
+    border: 0;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    cursor: pointer;
+}
+
+
+/* Navigation links */
+.navigation {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #000;
+    font-weight: 400;
+}
+
+.navigation .logo {
+    font-weight: bold;
+    font-size: 50px;
+}
+
+/* Header icons styling */
+.header-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-right: 135px;
+}
+
+
+.header-icons a img {
+    width: 25px; /* Adjust the size of the icons */
+    height: 25px;
+    transition: transform 0.5s ease;
+}
+
+.header-icons a img:hover {
+    transform: scale(1.2); /* Slight zoom effect on hover */
+}
+
+
+
+.hello {
+    margin-left: 150px;
+}
+
+
+
+footer {
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+    font-family: Arial, sans-serif;
+}
+
+.footer-logo {
+    flex: 100%;
+}
+
+.footer-section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 150px;
+    margin-right: 150px;
+
+}
+
+.footer-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+
+strong {
+    margin-right: 5px;
+}
+
+
+.footer-section p {
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 0.5rem 0;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+section p {
+    display: flex; /* Enable flex layout for icons and text */
+    align-items: center; /* Vertically align the icon with the text */
+    margin: 0.5rem 0; /* Add spacing between each line */
+    font-size: 0.9rem; /* Optional: Adjust text size */
+}
+
+.contact-icon {
+    width: 20px; /* Set the size of the icons */
+    height: 20px;
+    margin-right: 10px; /* Add space between the icon and the text */
+    flex-shrink: 0; /* Prevent the icon from shrinking */
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icons a img {
+    width: 30px; /* Adjust the size of the icons */
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.2); /* Slight zoom effect on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navigation {
+        justify-content: center;
+    }
+
+    .header-icons {
+        justify-content: center;
+    }
+
+
+
+
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-section {
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+}
