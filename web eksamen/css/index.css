@@ -3,18 +3,23 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: white;
+    
 }
 
 .header-container {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
     width: 100%;
     margin-top: 40px;
     margin-bottom: 60px;
-    background-color: white;
+}
 
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
 }
 
 /* Search bar styling */
@@ -28,7 +33,7 @@ body{
     border: 2px solid rgb(117, 84, 150);
     border-radius: 60px;
     padding: 8px;
-    margin-left: 150px;
+
 }
 
 .search-bar input {
@@ -83,8 +88,10 @@ body{
 .header-icons {
     display: flex;
     align-items: center;
-    gap: 15px;
-    margin-right: 135px;
+}
+
+header section a img {
+    margin-left: 15px;
 }
 
 
@@ -109,8 +116,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 150px;
-    margin-right: 150px;
     position: relative;
 }
 
@@ -118,7 +123,7 @@ body{
     display: flex;
     overflow-x: auto;
     gap: 20px;
-    width: 100%;
+    width: 80%;
     height: 600px; /* Adjusted height for full image display */
     scroll-snap-type: x mandatory; /* Enable snapping for horizontal scrolling */
     scroll-behavior: smooth; /* Smooth scrolling effect */
@@ -250,8 +255,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 150px;
-    margin-right: 150px;
     position: relative;
     margin-top: 50px;
 }
@@ -262,59 +265,81 @@ body{
     align-items: center;
     justify-content: center;
     margin: 0;
+    width: 80%;
 }
 
 .sec2h2 {
     font-size: 50px;
 }
 
+.productbuttons {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 60px;
+    margin-top: 20px;
+}
+
+section button {
+    background: white;
+    border: 1px solid rgb(117, 84, 150);
+    height: 48px;
+    width: 150px;
+    border-radius: 30px;
+}
+
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
-    gap: 20px; /* Spacing between boxes */
-    justify-items: center; /* Center-align boxes */
-    margin: 0 auto;
-    padding: 20px;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for the grid */
+    gap: 1rem;
+    justify-items: center; /* Center-align items */
+    margin: 0;
 }
 
 .product-card {
     background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 300px; /* Adjust width as needed */
+    border-radius: 20px;
     text-align: center;
-    padding: 15px;
 }
 
 .product-card img {
     width: 100%;
-    border-radius: 10px;
+    height: 400px;
+    border-radius: 20px;
 }
 
-.product-card h3 {
-    font-size: 18px;
-    margin: 10px 0 5px;
-    font-weight: bold;
+.product-info {
+    display: flex;
+    justify-content: space-between; /* Align items to opposite sides */
+    margin-top: 10px;
+    padding: 0;
 }
 
-.product-card .price {
+.product-name {
     font-size: 16px;
-    color: #666;
-    margin-bottom: 10px;
+    font-weight: bold;
+    color: black;
+    text-align: left;
+}
+
+.price {
+    font-size: 16px;
+    color: black;
+    text-align: right;
 }
 
 .reviews {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     gap: 5px;
-    font-size: 14px;
+    font-size: 16px;
     color: #333;
+    margin-top: 10px;
 }
 
 .reviews span {
-    font-size: 16px;
-    color: gold; /* Star color */
+    font-size: 24px;
+    color: black;
 }
 
 
@@ -326,25 +351,21 @@ body{
 
 
 
-
-footer {
-    background-color: #fff;
-    border-top: 1px solid #ccc;
-    font-family: Arial, sans-serif;
-}
 
 .footer-logo {
     flex: 100%;
 }
 
+.footer-container {
+    display: flex;
+    justify-content: center;
+}
 .footer-section {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-    margin-left: 150px;
-    margin-right: 150px;
-
+    width: 80%;
 }
 
 .footer-section h3 {
@@ -359,8 +380,14 @@ strong {
 
 
 .footer-section p {
-    font-size: 0.9rem;
-    margin: 0.5rem 0;
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+.footer-section p a {
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
 }
 
 .footer-section ul {
@@ -381,11 +408,9 @@ strong {
     text-decoration: underline;
 }
 
-section p {
+footer section p {
     display: flex; /* Enable flex layout for icons and text */
     align-items: center; /* Vertically align the icon with the text */
-    margin: 0.5rem 0; /* Add spacing between each line */
-    font-size: 0.9rem; /* Optional: Adjust text size */
 }
 
 .contact-icon {
@@ -412,6 +437,10 @@ section p {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    body {
+        margin: 0 10px;
+    }
+
     .header-container {
         flex-direction: column;
         gap: 10px;
@@ -429,7 +458,7 @@ section p {
 
     .product-grid {
     grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
-}
+    }
 
     
 

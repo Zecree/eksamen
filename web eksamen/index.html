@@ -9,36 +9,40 @@
 <body>
     <header>
         <div class="header-container">
-            <section>
-                <form action="" class="search-bar">
-                    <input type="text" placeholder="Søk her" aria-label="Search">
-                    <button type="submit">
-                        <img src="images/header/search.png" class="search-icon">
-                    </button>
-                </form>
-            </section>
+            <section class="nav">
 
-            <section>
-                <nav class="navigation">
-                    <a href="#home">Hjem</a>
-                    <a href="#products">Produkter</a>
-                    <a href="#logo" class="logo">Logo</a>
-                    <a href="#categories">Kategorier</a>
-                    <a href="#contact">Kontakt oss</a>
-                </nav>
-            </section>
+                <section>
+                    <form action="" class="search-bar">
+                        <input type="text" placeholder="Søk her" aria-label="Search">
+                        <button type="submit">
+                            <img src="images/header/search.png" class="search-icon">
+                        </button>
+                    </form>
+                </section>
+    
+                <section>
+                    <nav class="navigation">
+                        <a href="#home">Hjem</a>
+                        <a href="#products">Produkter</a>
+                        <a href="#logo" class="logo">Logo</a>
+                        <a href="#categories">Kategorier</a>
+                        <a href="#contact">Kontakt oss</a>
+                    </nav>
+                </section>
+    
+                <section class="header-icons">
+                    <a href="#profile">
+                        <img src="images/header/user.png" alt="User Profile">
+                    </a>
+                    <a href="#wishlist">
+                        <img src="images/header/heart.png" alt="Wishlist">
+                    </a>
+                    <a href="#cart">
+                        <img src="images/header/cart.png" alt="Shopping Cart">
+                    </a>
+                <section>
 
-            <section class="header-icons">
-                <a href="#profile">
-                    <img src="images/header/user.png" alt="User Profile">
-                </a>
-                <a href="#wishlist">
-                    <img src="images/header/heart.png" alt="Wishlist">
-                </a>
-                <a href="#cart">
-                    <img src="images/header/cart.png" alt="Shopping Cart">
-                </a>
-            <section>
+            </section>
         </div>
     </header>
 
@@ -77,69 +81,86 @@
         <section class="section2">
             <h2 class="sec2h2">Våre mest populære produkter</h2>
             <p>Oppdag det beste av det beste</p>
+            <section class="productbuttons">
+                <button>New Product</button>
+                <button>Special Price</button>
+                <button>Best Sellers</button>
+            </section>
             <section class="product-grid">
-                <div class="product-card">
-                    <img src="https://img.freepik.com/free-vector/single-page-application-abstract-concept-illustration-spa-web-page-web-development-trend-app-inside-browser-dynamically-rewriting-page-responsive-website-creation_335657-899.jpg?t=st=1732159952~exp=1732163552~hmac=0a73362d7e1a1b521fe5380c745607aab9faa76c9d088b6e4e3258a141f43f89&w=826" alt="Product Image">
-                    <h3>Product Name</h3>
-                    <p class="price">Kr 1999</p>
-                    <div class="reviews">
-                        <span>⭐⭐⭐⭐☆</span>
+                <section class="product-card">
+                    <img src="https://img.freepik.com/premium-photo/coding-screen-3d-rendering_419924-47.jpg?w=1380" alt="Product Image">
+                    <section class="product-info">
+                        <span class="product-name">Product Name</span>
+                        <span class="price">Kr 1999</span>
+                    </section>        
+                    <footer class="reviews">
+                        <span>★★★★☆</span>
                         <p>842 Reviews</p>
-                    </div>
-                </div>
-                <!-- Repeat the .product-card for six boxes -->
-                <div class="product-card">
-                    <img src="https://img.freepik.com/free-vector/single-page-application-abstract-concept-illustration-spa-web-page-web-development-trend-app-inside-browser-dynamically-rewriting-page-responsive-website-creation_335657-899.jpg?t=st=1732159952~exp=1732163552~hmac=0a73362d7e1a1b521fe5380c745607aab9faa76c9d088b6e4e3258a141f43f89&w=826" alt="Product Image">
-                    <h3>Product Name</h3>
-                    <p class="price">Kr 1999</p>
-                    <div class="reviews">
-                        <span>⭐⭐⭐⭐☆</span>
+                    </footer>
+                </section>
+                <section class="product-card">
+                    <img src="https://img.freepik.com/premium-photo/coding-screen-3d-rendering_419924-47.jpg?w=1380" alt="Product Image">
+                    <section class="product-info">
+                        <span class="product-name">Product Name</span>
+                        <span class="price">Kr 1999</span>
+                    </section>        
+                    <footer class="reviews">
+                        <span>★★★★☆</span>
                         <p>842 Reviews</p>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <img src="https://img.freepik.com/free-vector/single-page-application-abstract-concept-illustration-spa-web-page-web-development-trend-app-inside-browser-dynamically-rewriting-page-responsive-website-creation_335657-899.jpg?t=st=1732159952~exp=1732163552~hmac=0a73362d7e1a1b521fe5380c745607aab9faa76c9d088b6e4e3258a141f43f89&w=826" alt="Product Image">
-                    <h3>Product Name</h3>
-                    <p class="price">Kr 1999</p>
-                    <div class="reviews">
-                        <span>⭐⭐⭐⭐☆</span>
+                    </footer>
+                </section>
+                <section class="product-card">
+                    <img src="https://img.freepik.com/premium-photo/coding-screen-3d-rendering_419924-47.jpg?w=1380" alt="Product Image">
+                    <section class="product-info">
+                        <span class="product-name">Product Name</span>
+                        <span class="price">Kr 1999</span>
+                    </section>        
+                    <footer class="reviews">
+                        <span>★★★★☆</span>
                         <p>842 Reviews</p>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <img src="https://img.freepik.com/free-vector/single-page-application-abstract-concept-illustration-spa-web-page-web-development-trend-app-inside-browser-dynamically-rewriting-page-responsive-website-creation_335657-899.jpg?t=st=1732159952~exp=1732163552~hmac=0a73362d7e1a1b521fe5380c745607aab9faa76c9d088b6e4e3258a141f43f89&w=826" alt="Product Image">
-                    <h3>Product Name</h3>
-                    <p class="price">Kr 1999</p>
-                    <div class="reviews">
-                        <span>⭐⭐⭐⭐☆</span>
+                    </footer>
+                </section>
+                <section class="product-card">
+                    <img src="https://img.freepik.com/premium-photo/coding-screen-3d-rendering_419924-47.jpg?w=1380" alt="Product Image">
+                    <section class="product-info">
+                        <span class="product-name">Product Name</span>
+                        <span class="price">Kr 1999</span>
+                    </section>        
+                    <footer class="reviews">
+                        <span>★★★★☆</span>
                         <p>842 Reviews</p>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <img src="https://img.freepik.com/free-vector/single-page-application-abstract-concept-illustration-spa-web-page-web-development-trend-app-inside-browser-dynamically-rewriting-page-responsive-website-creation_335657-899.jpg?t=st=1732159952~exp=1732163552~hmac=0a73362d7e1a1b521fe5380c745607aab9faa76c9d088b6e4e3258a141f43f89&w=826" alt="Product Image">
-                    <h3>Product Name</h3>
-                    <p class="price">Kr 1999</p>
-                    <div class="reviews">
-                        <span>⭐⭐⭐⭐☆</span>
+                    </footer>
+                </section>
+                <section class="product-card">
+                    <img src="https://img.freepik.com/premium-photo/coding-screen-3d-rendering_419924-47.jpg?w=1380" alt="Product Image">
+                    <section class="product-info">
+                        <span class="product-name">Product Name</span>
+                        <span class="price">Kr 1999</span>
+                    </section>        
+                    <footer class="reviews">
+                        <span>★★★★☆</span>
                         <p>842 Reviews</p>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <img src="https://img.freepik.com/free-vector/single-page-application-abstract-concept-illustration-spa-web-page-web-development-trend-app-inside-browser-dynamically-rewriting-page-responsive-website-creation_335657-899.jpg?t=st=1732159952~exp=1732163552~hmac=0a73362d7e1a1b521fe5380c745607aab9faa76c9d088b6e4e3258a141f43f89&w=826" alt="Product Image">
-                    <h3>Product Name</h3>
-                    <p class="price">Kr 1999</p>
-                    <div class="reviews">
-                        <span>⭐⭐⭐⭐☆</span>
+                    </footer>
+                </section>
+                <section class="product-card">
+                    <img src="https://img.freepik.com/premium-photo/coding-screen-3d-rendering_419924-47.jpg?w=1380" alt="Product Image">
+                    <section class="product-info">
+                        <span class="product-name">Product Name</span>
+                        <span class="price">Kr 1999</span>
+                    </section>        
+                    <footer class="reviews">
+                        <span>★★★★☆</span>
                         <p>842 Reviews</p>
-                    </div>
-                </div>
+                    </footer>
+                </section>
             </section>
         </section>
     </div>
 </main>
 
 <footer>
-    <div class="footer-section">
+    <div class="footer-container">
+        <section class="footer-section">
         <section class="footer-logo">
             <h3>Logo</h3>
             <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
@@ -192,6 +213,7 @@
                 </a>
             </section>
         </section>
+    </section>
     </div>
 </footer>
 
