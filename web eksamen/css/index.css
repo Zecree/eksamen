@@ -2,7 +2,7 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f0ece9;
+    background-color: white;
 }
 
 .header-container {
@@ -11,10 +11,9 @@ body{
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 40px;
+    margin-bottom: 60px;
     background-color: white;
-    border-bottom: 1px solid #ccc;
 
 }
 
@@ -101,9 +100,230 @@ body{
 
 
 
-.hello {
+
+
+
+
+
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-left: 150px;
+    margin-right: 150px;
+    position: relative;
 }
+
+.scrollbox {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    width: 100%;
+    height: 600px; /* Adjusted height for full image display */
+    scroll-snap-type: x mandatory; /* Enable snapping for horizontal scrolling */
+    scroll-behavior: smooth; /* Smooth scrolling effect */
+    border-radius: 30px;
+}
+
+
+
+
+
+
+
+.scrollimg {
+    flex: 0 0 100%; /* Each image takes 100% of the container width */
+    height: 100%; /* Ensure the image fills the full height of the scrollbox */
+    position: relative;
+    scroll-snap-align: center;
+    overflow: hidden;
+    border-radius: 30px;
+    margin: 0;
+}
+
+.scrollimg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+.figcap1 {
+    position:absolute;
+    top: 25%;
+    right: 10px;
+    color: black;
+    padding: 30px;
+    width: 50%;
+    box-sizing: border-box;
+    text-align: right;
+}
+
+.figcap2 {
+    position: absolute;
+    top: 25%;
+    color: white;
+    padding: 30px;
+    width: 50%;
+    box-sizing: border-box;
+    text-align: left;
+}
+.figcap3 {
+    position: absolute;
+    top: 25%;
+    color: white;
+    padding: 30px;
+    width: 50%;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+
+.scrollimg figcaption h2 {
+    font-size: 46px;
+    margin: 0 0 30px;
+}
+
+.scrollimg figcaption p {
+    font-size: 18px;
+    margin: 0 0 20px;
+}
+
+.scrollimg figcaption .read-more {
+    background: white;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.scrollimg figcaption .read-more2 {
+    background: black;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.scrollimg figcaption button a {
+    color: black;
+    text-decoration: none;
+}
+.scrollimg figcaption .read-more2 a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+.arrow {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(2px);
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+}
+
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}
+
+
+
+
+
+.main-container2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 150px;
+    margin-right: 150px;
+    position: relative;
+    margin-top: 50px;
+}
+
+.section2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.sec2h2 {
+    font-size: 50px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px; /* Spacing between boxes */
+    justify-items: center; /* Center-align boxes */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.product-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Adjust width as needed */
+    text-align: center;
+    padding: 15px;
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product-card h3 {
+    font-size: 18px;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.product-card .price {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.reviews {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.reviews span {
+    font-size: 16px;
+    color: gold; /* Star color */
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -207,6 +427,11 @@ section p {
 
 
 
+    .product-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
+}
+
+    
 
 
     footer {
