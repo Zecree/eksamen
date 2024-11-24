@@ -3,15 +3,15 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: white;
-    
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .header-container {
     display: flex;
     justify-content: center;
-    width: 100%;
-    margin-top: 40px;
     margin-bottom: 60px;
+    margin-top: 40px;
 }
 
 .nav {
@@ -19,10 +19,10 @@ body{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
+    width: 100%;
 }
 
-/* Search bar styling */
+
 .search-bar {
     width: 100%;
     max-width: 250px;
@@ -84,7 +84,8 @@ body{
     font-size: 50px;
 }
 
-/* Header icons styling */
+
+
 .header-icons {
     display: flex;
     align-items: center;
@@ -96,13 +97,13 @@ header section a img {
 
 
 .header-icons a img {
-    width: 25px; /* Adjust the size of the icons */
+    width: 25px;
     height: 25px;
     transition: transform 0.5s ease;
 }
 
 .header-icons a img:hover {
-    transform: scale(1.2); /* Slight zoom effect on hover */
+    transform: scale(1.2);
 }
 
 
@@ -123,22 +124,18 @@ header section a img {
     display: flex;
     overflow-x: auto;
     gap: 20px;
-    width: 80%;
-    height: 600px; /* Adjusted height for full image display */
-    scroll-snap-type: x mandatory; /* Enable snapping for horizontal scrolling */
-    scroll-behavior: smooth; /* Smooth scrolling effect */
+    width: 100%;
+    height: 600px;
+    scroll-snap-type: none;
+    scroll-behavior: smooth;
     border-radius: 30px;
 }
 
 
 
-
-
-
-
 .scrollimg {
-    flex: 0 0 100%; /* Each image takes 100% of the container width */
-    height: 100%; /* Ensure the image fills the full height of the scrollbox */
+    flex: 0 0 100%;
+    height: 100%;
     position: relative;
     scroll-snap-align: center;
     overflow: hidden;
@@ -256,7 +253,6 @@ header section a img {
     align-items: center;
     justify-content: center;
     position: relative;
-    margin-top: 50px;
 }
 
 .section2 {
@@ -264,8 +260,9 @@ header section a img {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
     margin: 0;
-    width: 80%;
+    width: 100%;
 }
 
 .sec2h2 {
@@ -318,6 +315,18 @@ header section a img {
 }
 
 
+
+.product-card .heart {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
 section button {
     background: white;
     border: 1px solid rgb(117, 84, 150);
@@ -328,10 +337,8 @@ section button {
 
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns for the grid */
+    grid-template-columns: repeat(3, auto);
     gap: 1rem;
-    justify-items: center; /* Center-align items */
-    margin: 0;
 }
 
 .product-card {
@@ -340,23 +347,32 @@ section button {
     text-align: center;
 }
 
-.heart {
-    position: absolute; /* Allows positioning over the image */
-    height: 30px;
-    width: 30px;
-    top: 10px; /* Positions vertically in the middle */
-    right: 10px; /* Positions horizontally in the middle */
-    background-color: rgb(199, 199, 199); /* Button background */
-    color: white; /* Button text color */
-    border: none; /* Removes border */
-    border-radius: 50%; /* Rounds button edges */
-    cursor: pointer; /* Shows pointer cursor on hover */
-    font-size: 20px;
-    transition: background-color 0.3s, color 0.3s;
-    justify-content: center;
-    align-items: center;
+.product-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 20px;
     text-align: center;
 }
+
+.product-card .heart {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: 10px;
+    right: 10px;
+    background-color: rgb(199, 199, 199);
+    transition: background-color 0.3s, color 0.3s;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
 
 .heart:hover {
     background-color: rgb(209, 86, 86);
@@ -373,7 +389,7 @@ section button {
 
 .product-info {
     display: flex;
-    justify-content: space-between; /* Align items to opposite sides */
+    justify-content: space-between;
     margin-top: 10px;
     padding: 0;
 }
@@ -415,6 +431,7 @@ section button {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 50px;
 }
 
 .section3 {
@@ -431,17 +448,13 @@ section button {
 .kategorier {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    width: 80%;
     gap: 1rem;
 }
 
 .kategorier section {
     display: flex;
-    flex-direction: row;
-    align-items: center; /* Center vertically */
-    text-align: center;
     border-radius: 20px;
-    position: relative; /* Ensure the section is isolated for styling */
+    position: relative;
 }
 
 .kategorier img {
@@ -451,12 +464,14 @@ section button {
     border-radius: 20px;
 }
 
+
 .category {
+    position: absolute;
+    top: 45%;
+    left: 33%;
     color: white;
-    font-size: 1.5rem;
+    font-size: 20px;
     font-weight: bold;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8); /* Text visibility enhancement */
-    z-index: 2; /* Place text above the image */
 }
 .item1 {
     grid-column: 1 / 2;
@@ -487,24 +502,44 @@ section button {
     justify-content: center;
 }
 
+.ann-sec  {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    flex: 0 0 289px;
+    height: 500px;
+    border: 1px solid #dfdfdf;
+    border-radius: 30px;
+    gap: 1rem;
+}
+
 .scrollbox2 {
     display: flex;
     overflow-x: auto;
     gap: 20px;
-    width: 80%;
-    height: 300px; /* Adjusted height for full image display */
-    scroll-snap-type: none; /* Enable snapping for horizontal scrolling */
-    scroll-behavior: smooth; /* Smooth scrolling effect */
+    width: 100%;
+    height: auto;
+    scroll-snap-type: none;
+    scroll-behavior: smooth;
     border-radius: 30px;
+    flex-wrap: nowrap;
 }
 
 .scrollimg2 img {
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
     object-fit: cover;
     display: block;
 }
 
+.scrollbox2 p {
+    margin-left: 10px;
+}
+.scrollbox2 span {
+    font-weight: bold;
+    margin-left: 10px;
+}
 
 
 
@@ -512,23 +547,21 @@ section button {
 
 
 footer {
+    margin-top: 50px;
     margin-bottom: 100px;
+    border-top: 1px solid #bebebe;
+    padding-top: 50px;
 }
 
 .footer-logo {
     flex: 100%;
 }
 
-.footer-container {
-    display: flex;
-    justify-content: center;
-}
 .footer-section {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-    width: 80%;
 }
 
 .footer-section h3 {
@@ -544,7 +577,8 @@ strong {
 
 .footer-section p {
     font-size: 16px;
-    margin: 8px 0;
+    margin-top: 10px;
+    margin-bottom: 32px;
 }
 
 .footer-section p a {
@@ -572,15 +606,15 @@ strong {
 }
 
 footer section p {
-    display: flex; /* Enable flex layout for icons and text */
-    align-items: center; /* Vertically align the icon with the text */
+    display: flex;
+    align-items: center;
 }
 
 .contact-icon {
-    width: 20px; /* Set the size of the icons */
+    width: 20px;
     height: 20px;
-    margin-right: 10px; /* Add space between the icon and the text */
-    flex-shrink: 0; /* Prevent the icon from shrinking */
+    margin-right: 10px;
+    flex-shrink: 0;
 }
 
 .social-icons {
@@ -589,28 +623,45 @@ footer section p {
 }
 
 .social-icons a img {
-    width: 30px; /* Adjust the size of the icons */
+    width: 30px;
     height: 30px;
     transition: transform 0.3s ease;
 }
 
 .social-icons a img:hover {
-    transform: scale(1.2); /* Slight zoom effect on hover */
+    transform: scale(1.2);
 }
 
 
 @media (max-width: 768px) {
-    body {
-        margin: 0 10px;
+    body{
+        margin: 0 16px;
     }
 
     .header-container {
+        display: flex;
         flex-direction: column;
-        gap: 10px;
+        align-items: center;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .search-section {
+        margin-bottom: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
 
     .navigation {
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
     }
 
     .header-icons {
@@ -619,10 +670,73 @@ footer section p {
 
 
 
-    .product-grid {
-    grid-template-columns: repeat(1, 1fr); /* 2 columns for smaller screens */
+
+    .scrollimg figcaption h2 {
+        font-size: 32px;
+        margin: 0;
     }
 
+    .figcap1 {
+        position: absolute;
+        top: 5%;
+        right: 10px;
+        color: black;
+        width: 60%;
+        box-sizing: border-box;
+        text-align: right;
+    }
+
+    .figcap2, .figcap3 {
+        position: absolute;
+        top: 5%;
+        color: black;
+        width: 60%;
+        box-sizing: border-box;
+        text-align: left;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    section button {
+        background: white;
+        border: 1px solid rgb(117, 84, 150);
+        height: 60px;
+        width: 100px;
+        border-radius: 30px;
+    }
+
+
+
+
+    .product-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    }
+
+    .reviews {
+        display: flex;
+        flex-direction: row;
+    }
+
+
+
+
+
+    .section3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .kategorier {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
 
 
@@ -632,12 +746,11 @@ footer section p {
 
     footer {
         flex-direction: column;
-        align-items: center;
-        text-align: center;
+        align-items: left;
+        text-align: left;
     }
 
     .footer-section {
-        margin-right: 0;
         margin-bottom: 2rem;
     }
 

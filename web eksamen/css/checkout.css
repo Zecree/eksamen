@@ -1,0 +1,726 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Start av header */
+.header-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+    margin-top: 40px;
+}
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.search-bar {
+    width: 100%;
+    max-width: 250px;
+    height: 20px;
+    background: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    border: 2px solid rgb(117, 84, 150);
+    border-radius: 60px;
+    padding: 8px;
+}
+.search-bar input {
+    background: transparent;
+    border: 0;
+    width: 200px;
+    outline: none;
+    padding: 10px;
+    font-size: 20px;
+    color: #333;
+}
+::placeholder {
+    color: #333
+}
+.search-bar button img {
+    width: 20px;
+}
+.search-bar button {
+    border: 0;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    cursor: pointer;
+}
+.navigation {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+}
+.navigation a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #000;
+    font-weight: 400;
+}
+.navigation .logo {
+    font-weight: bold;
+    font-size: 50px;
+}
+.header-icons {
+    display: flex;
+    align-items: center;
+}
+header section a img {
+    margin-left: 15px;
+}
+.header-icons a img {
+    width: 25px;
+    height: 25px;
+    transition: transform 0.5s ease;
+}
+.header-icons a img:hover {
+    transform: scale(1.2);
+}
+/*Slutt av header*/
+
+
+
+
+/*Start av produkter*/
+.produkter {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.produkt-nav {
+    margin-bottom: 30px;
+}
+.produkt-nav h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 26px;
+}
+.goback {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+.gobackarrow {
+    width: 20px;
+    height: 20px;
+}
+.goback a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #000;
+    font-weight: 400;
+}
+/*Slutt på produkter*/
+
+
+/*Start på shoppingbag*/
+.shoppingbag {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    border: 1px solid gray;
+}
+.shopping-section {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 600px;
+    gap: 1rem;
+}
+.shoppingbag img {
+    width: 200px;
+    height: 200px;
+}
+.shoppingbagbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.products {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
+    gap: 4px;
+}
+.products span {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0;
+}
+.products p {
+    font-size: 16px;
+    margin: 0;
+}
+.selection {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    gap: 1rem;
+}
+.dropdown {
+    width: 60px;
+    height: 40px;
+    font-size: 14px;
+    appearance: none;
+    background: #dadada;
+    border: none;
+    cursor: pointer;
+    justify-content: center;
+    text-align: center;
+}
+.custom-number-input {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+}
+.number-input-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.number-input {
+    width: 50px;
+    height: 20px;
+    padding: 5px;
+    font-size: 14px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+.heartandtrash {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-left: 100px;
+}
+.shoppingbag aside img {
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+}
+/*Slutt på shoppingbag*/
+
+/*Start på opplysningdel*/
+.info {
+    display: flex;
+    justify-content: center;
+    border: 1px solid gray;
+}
+.infos {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    background-color: #fff;
+    width: 100%;
+    max-width: 600px;
+    gap: 1rem;
+}
+.form-container {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+.form-row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+.form-group label {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.form-group input {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 100%;
+}
+.form-group input::placeholder {
+    color: #aaa;
+}
+.form-actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.save-btn {
+    background-color: #474747;
+    border: none;
+    height: 40px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 14px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: white;
+}
+.save-btn:hover {
+    background-color: #444;
+}
+.cancel-link {
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.cancel-link:hover {
+    text-decoration: underline;
+}
+/*Slutt på opplysningdel*/
+
+/*Start på fraktdel*/
+.shipping {
+    display: flex;
+    justify-content: center;
+    border: 1px solid gray;
+}
+.delivery-section {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    background-color: #fff;
+    width: 100%;
+    max-width: 600px;
+    gap: 1rem;
+}
+.delivery-section h3 {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.delivery-section h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #333;
+}
+.delivery-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+.radio-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: left;
+    gap: 10px;
+}
+.radio-container input[type="radio"] {
+    cursor: pointer;
+    margin-top: 3px;
+}
+.radio-container label {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+.option-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+}
+.option-duration {
+    font-size: 14px;
+    color: #ccc8c8;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.option-description {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
+}
+.price-and-icon {
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+    gap: 10px;
+    white-space: nowrap;
+    align-items: center;
+}
+.price-and-icon img {
+    height: 20px;
+    width: 20px;
+}
+/*Slutt på fraktdel*/
+
+/*Start på betalingsdel*/
+.pay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid gray;
+    background-color: #fff;
+}
+.pay-section {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    background-color: #fff;
+    width: 100%;
+    max-width: 600px;
+    gap: 1rem;
+    margin-bottom: 20px;
+}
+.payment h3 {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    gap: 10px;
+    text-transform: uppercase;
+}
+.payment h3 .section-number {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+}
+.payment-form {
+    width: 100%;
+    max-width: 600px;
+}
+h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.form-row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+.form-group label {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.form-group input {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 100%;
+}
+.form-group input::placeholder {
+    color: #aaa;
+}
+.payment-summary {
+    text-align: center;
+    margin: 20px 0;
+}
+.payment-summary p {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.payment-summary h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+.payment-form img {
+    height: 20px;
+    width: 20px;
+}
+.complete-payment-btn {
+    background-color: #474747;
+    color: #fff;
+    border: none;
+    height: 40px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 4px;
+}
+.complete-payment-btn:hover {
+    background-color: #444;
+}
+.disclaimer {
+    font-size: 12px;
+    color: #555;
+    text-align: center;
+}
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+}
+.input-with-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.calendar-icon {
+    position: absolute;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+/*Slutt på betalingsdel*/
+
+
+/*Footer*/
+footer {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    border-top: 1px solid #bebebe;
+    padding-top: 50px;
+}
+.footer-logo {
+    flex: 100%;
+}
+.footer-section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer-section h3 {
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+strong {
+    margin-right: 5px;
+}
+.footer-section p {
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 32px;
+}
+.footer-section p a {
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-section ul li {
+    margin: 0.5rem 0;
+}
+.footer-section ul li a {
+    text-decoration: none;
+    color: #333;
+}
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+footer section p {
+    display: flex;
+    align-items: center;
+}
+.contact-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+.social-icons {
+    display: flex;
+    gap: 1rem;
+}
+.social-icons a img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+.social-icons a img:hover {
+    transform: scale(1.2);
+}
+/*Slutt på footer*/
+
+
+@media (max-width: 768px) {
+    body{
+        margin: 0 16px;
+    }
+    /*Header media*/
+    .header-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    .search-section {
+        margin-bottom: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .navigation {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .header-icons {
+        justify-content: center;
+    }
+    /*Header media*/
+
+    /*General padding*/
+    .shoppingbag,
+    .info,
+    .shipping,
+    .pay {
+        padding-bottom: 20px;
+    }
+    /*General Padding*/
+
+    /*Shopping*/
+    .shoppingbag {
+        display: flex;
+        justify-content: center;
+    }
+    .shopping-section {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .shoppingbagbox {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    /*Shopping*/
+
+    /*Products*/
+    .products {
+        margin: 0;
+    }
+    .dropdown-container,
+    .custom-number-inpu {
+        flex-direction: row;
+    }
+    .dropdown {
+        width: 60px;
+        font-size: 14px;
+    }
+    .number-input {
+        font-size: 14px;
+    }
+    .heartandtrash {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        margin: 0;
+    }
+    /*Products*/
+
+    /*Info*/
+    .infos {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .info-media {
+        margin-bottom: 60px;
+    } 
+    .form-row {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .form-group {
+        margin: 0;
+    }
+    /*Info*/
+
+    /*Delivery*/
+    .delivery-section {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .delivery-option {
+        display: flex;
+        flex-direction: column;
+    }
+    .price-and-icon {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 10px;
+        margin-left: 20px;
+    }
+    /*Delivery*/
+
+    /*Pay*/
+    .pay-section {
+        width: 80%;
+        margin: 0 auto;
+    }
+    /*Pay*/
+    
+    /*Footer media*/
+    footer {
+        flex-direction: column;
+        align-items: left;
+        text-align: left;
+    }
+
+    .footer-section {
+        margin-bottom: 2rem;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+}

@@ -4,52 +4,319 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nettbutikk - Forside</title>
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/checkout.css">
 </head>
 <body>
     <header>
         <div class="header-container">
-            <section>
-                <form action="" class="search-bar">
-                    <input type="text" placeholder="Søk her" aria-label="Search">
-                    <button type="submit">
-                        <img src="images/header/search.png" class="search-icon">
-                    </button>
-                </form>
-            </section>
+            <section class="nav">
 
-            <section>
-                <nav class="navigation">
-                    <a href="#home">Hjem</a>
-                    <a href="#products">Produkter</a>
-                    <a href="#logo" class="logo">Logo</a>
-                    <a href="#categories">Kategorier</a>
-                    <a href="#contact">Kontakt oss</a>
-                </nav>
-            </section>
+                <section>
+                    <form action="" class="search-bar">
+                        <input type="text" placeholder="Søk her" aria-label="Search">
+                        <button type="submit">
+                            <img src="images/header/search.png" class="search-icon">
+                        </button>
+                    </form>
+                </section>
+    
+                <section>
+                    <nav class="navigation">
+                        <a href="#home">Hjem</a>
+                        <a href="#products">Produkter</a>
+                        <a href="#logo" class="logo">Logo</a>
+                        <a href="#categories">Kategorier</a>
+                        <a href="#contact">Kontakt oss</a>
+                    </nav>
+                </section>
+    
+                <section class="header-icons">
+                    <a href="#profile">
+                        <img src="images/header/user.png" alt="User Profile">
+                    </a>
+                    <a href="#wishlist">
+                        <img src="images/header/heart.png" alt="Wishlist">
+                    </a>
+                    <a href="#cart">
+                        <img src="images/header/cart.png" alt="Shopping Cart">
+                    </a>
+                <section>
 
-            <section class="header-icons">
-                <a href="#profile">
-                    <img src="images/header/user.png" alt="User Profile">
-                </a>
-                <a href="#wishlist">
-                    <img src="images/header/heart.png" alt="Wishlist">
-                </a>
-                <a href="#cart">
-                    <img src="images/header/cart.png" alt="Shopping Cart">
-                </a>
-            <section>
+            </section>
         </div>
     </header>
 
 <main>
-    <div class="hello">
-    <h2>halloooow :3c</h2>
+    <div class="produkter">
+        <section class="produkt-nav">
+            <span class="goback">
+                <a href=""><img src="images\main\scrollbox\arrowleft.png" alt="" class="gobackarrow"></a>
+                <a href="#index">Fortsett og handle</a>
+            </span>
+            <h2>Kasse</h2>
+        </section>
+
+        <section class="shoppingbag">
+            <section class="shopping-section">
+            <h3>1. SHOPPINGBAGEN DIN</h3>
+            <section class="shoppingbagbox">
+                <a href=""><img src="images\picture.png" alt=""></a>
+                <section class="products">
+                    <span>PRODUCT NAME</span>
+                    <p>Kr 1999</p>
+                    <p>Farge: beige</p>
+                    <section class="selection">
+                        <section class="dropdown-container">
+                            <label for="">Størrelse</label>
+                            <select id="size-select" class="dropdown">
+                                <option value="xs">XS</option>
+                                <option value="s" selected>S</option>
+                                <option value="m">M</option>
+                                <option value="l">L</option>
+                                <option value="xl">XL</option>
+                            </select>
+                        </section>
+                        <section class="custom-number-input">
+                            <label for="quantity">Antall</label>
+                            <section class="number-input-wrapper">
+                                <input type="number" id="quantity" name="quantity" class="number-input" value="1" min="1" max="10" step="1">
+                            </section>
+                        </section>
+                    </section>
+                </section>
+                <aside class="heartandtrash">
+                    <img src="images\main\heart.png" alt="">
+                    <img src="images\main\trash-can.png" alt="">
+                </aside>
+            </section>
+            <section class="shoppingbagbox">
+                <a href=""><img src="images\picture.png" alt=""></a>
+                <section class="products">
+                    <span>PRODUCT NAME</span>
+                    <p>Kr 1999</p>
+                    <p>Farge: beige</p>
+                    <section class="selection">
+                        <section class="dropdown.container">
+                            <label for="">Størrelse</label>
+                            <select id="size-select" class="dropdown">
+                                <option value="xs">XS</option>
+                                <option value="s" selected>S</option>
+                                <option value="m">M</option>
+                                <option value="l">L</option>
+                                <option value="xl">XL</option>
+                            </select>
+                        </section>
+                        <section class="custom-number-input">
+                            <label for="quantity">Antall</label>
+                            <section class="number-input-wrapper">
+                                <input type="number" id="quantity" name="quantity" class="number-input" value="1" min="1" max="10" step="1">
+                            </section>
+                        </section>
+                    </section>
+                </section>
+                <aside class="heartandtrash">
+                    <img src="images\main\heart.png" alt="">
+                    <img src="images\main\trash-can.png" alt="">
+                </aside>
+            </section>
+            <section class="shoppingbagbox">
+                <a href=""><img src="images\picture.png" alt=""></a>
+                <section class="products">
+                    <span>PRODUCT NAME</span>
+                    <p>Kr 1999</p>
+                    <p>Farge: beige</p>
+                    <section class="selection">
+                        <section class="dropdown.container">
+                            <label for="">Størrelse</label>
+                            <select id="size-select" class="dropdown">
+                                <option value="xs">XS</option>
+                                <option value="s" selected>S</option>
+                                <option value="m">M</option>
+                                <option value="l">L</option>
+                                <option value="xl">XL</option>
+                            </select>
+                        </section>
+                        <section class="custom-number-input">
+                            <label for="quantity">Antall</label>
+                            <section class="number-input-wrapper">
+                                <input type="number" id="quantity" name="quantity" class="number-input" value="1" min="1" max="10" step="1">
+                            </section>
+                        </section>
+                    </section>
+                </section>
+                <aside class="heartandtrash">
+                    <img src="images\main\heart.png" alt="">
+                    <img src="images\main\trash-can.png" alt="">
+                </aside>
+            </section>
+            </section>
+        </section>
+
+        <section class="info">
+            <section class="infos">
+            <h3>2. DINE OPPLYSNINGER</h3>
+            <form class="form-container">
+                <section>
+                    <h4>Leveringsadresse</h4>
+                    <section class="form-row">
+                        <section class="form-group">
+                            <label for="fornavn">Fornavn</label>
+                            <input type="text" id="fornavn" name="fornavn" placeholder="Nora*" required>
+                        </section>
+                        <section class="form-group">
+                            <label for="etternavn">Etternavn</label>
+                            <input type="text" id="etternavn" name="etternavn" placeholder="Nordman*" required>
+                        </section>
+                    </section>
+                    <section class="form-group">
+                        <label for="gateadresse">Gateadresse</label>
+                        <input type="text" id="gateadresse" name="gateadresse" placeholder="BRA veien 4*" required>
+                    </section>
+                    <section class="form-row">
+                        <section class="form-group">
+                            <label for="postnummer">Postnummer</label>
+                            <input type="number" id="postnummer" name="postnummer" placeholder="1752*" required>
+                        </section>
+                        <section class="form-group">
+                            <label for="poststed">Poststed</label>
+                            <input type="text" id="poststed" name="poststed" placeholder="Halden*" required>
+                        </section>
+                    </section>
+                </section>
+        
+                <section>
+                    <h4>Kontaktinformasjon</h4>
+                    <section class="form-group">
+                        <label for="epost">E-post</label>
+                        <input type="email" id="epost" name="epost" placeholder="Noranordman@hiof.no.*" required>
+                    </section>
+                    <section class="form-group">
+                        <label for="telefon">Telefon</label>
+                        <input type="tel" id="telefon" name="telefon" placeholder="+4749***018" required>
+                    </section>
+                </section>
+        
+                <section class="form-actions">
+                    <button type="submit" class="save-btn">Lagre</button>
+                    <a href="#" class="cancel-link">Avbryt</a>
+                </section>
+            </form>
+            </section>
+        </section>
+
+        <section class="shipping">
+            <section class="delivery-section">
+                <h3>3. LEVERING</h3>
+                <h4>LEVERINGSVALG</h4>
+        
+                <section class="delivery-option">
+                    <section class="radio-container">
+                        <input type="radio" id="express-home" name="delivery" value="express-home">
+                        <label for="express-home">
+                            <span class="option-title">Express Hjemlevering</span>
+                            <span class="option-duration">3-4 Virkedager</span>
+                            <p class="option-description">
+                                bestill hverdag før 08:00* for levering neste arbeidsdag. Leveres hjem til deg før frokost mandag til lørdag. *For levering til postnummer 4000-7999 er leveringstiden 2 arbeidsdager, for postnummer 8000-9999 er leveringstiden 3 arbeidsdager.
+                            </p>
+                        </label>
+                    </section>
+                    <section class="price-and-icon">
+                        <span>59 kr</span>
+                        <img src="images\main\fast-delivery.png" alt="Express Home Icon">
+                    </section>
+                </section>
+        
+                <section class="delivery-option">
+                    <section class="radio-container">
+                        <input type="radio" id="express-pickup" name="delivery" value="express-pickup">
+                        <label for="express-pickup">
+                            <span class="option-title">Ekspress Pakke til utleveringssted</span>
+                            <span class="option-duration">1-3 Virkedager</span>
+                            <p class="option-description">
+                                For henting på ditt nærmeste utleveringssted.
+                            </p>
+                        </label>
+                    </section>
+                    <section class="price-and-icon">
+                        <span>59 kr</span>
+                        <img src="images\main\shop.png" alt="Express Pickup Icon">
+                    </section>
+                </section>
+        
+                <section class="delivery-option">
+                    <section class="radio-container">
+                        <input type="radio" id="standard-home" name="delivery" value="standard-home">
+                        <label for="standard-home">
+                            <span class="option-title">Standard Hjemlevering</span>
+                            <span class="option-duration">5-8 Virkedager</span>
+                            <p class="option-description">
+                                Leveres hjem til deg før frokost mandag til lørdag innen 4-7 hverdager.
+                            </p>
+                        </label>
+                    </section>
+                    <section class="price-and-icon">
+                        <span>Gratis</span>
+                        <img src="images\main\box.png" alt="Standard Home Icon">
+                    </section>
+                </section>
+            </section>
+        </section>
+
+        <section class="pay">
+            <section class="pay-section">
+            <section class="payment">
+                <h3><span class="section-number">4.</span> BETALING</h3>
+                <form class="payment-form">
+                    <fisection>
+                        <h4>Betal med kort <img src="images\main\credit-card.png" alt="Card Icon"></h4>
+                        <section class="form-row">
+                            <section class="form-group">
+                                <label for="card-number">Kortnummer</label>
+                                <input type="text" id="card-number" name="card-number" placeholder="3423****4435" required>
+                            </section>
+                        </section>
+                        <section class="form-row">
+                            <section class="form-group expiry-date">
+                                <label for="expiry-date">Utløpsdato</label>
+                                <section class="input-with-icon">
+                                    <input type="text" id="expiry-date" name="expiry-date" placeholder="mm / dd / yyyy" required>
+                                    <img src="images\main\calendar.png" alt="Calendar Icon" class="calendar-icon">
+                                </section>
+                            </section>
+                            <section class="form-group">
+                                <label for="cvc">CVC/CVV</label>
+                                <input type="text" id="cvc" name="cvc" placeholder="CVC/CVV" required>
+                            </section>
+                        </section>
+                    </section>
+                    <section class="payment-summary">
+                        <p>Å betale inkl. mva.</p>
+                        <h1>1 199 kr</h1>
+                    </section>
+                    <button type="submit" class="complete-payment-btn">Fullfør kjøp</button>
+                    <p class="disclaimer">
+                        Du bekrefter herved at opplysningene og dokumentene du har oppgitt er korrekte og fullstendige. Leverandøren forbeholder seg retten til å heve eller avslutte avtaleforholdet dersom det foreligger uriktige eller ufullstendige opplysninger.
+                    </p>
+                    <section class="newsletter">
+                        <section class="checkbox-group">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <label for="newsletter">Ja takk! Send nyhetsbrev til meg.</label>
+                        </section>
+                        <section class="checkbox-group">
+                            <input type="checkbox" id="sms-offers" name="sms-offers">
+                            <label for="sms-offers">Jeg ønsker å motta tekstmeldinger med tilbud og nyheter.</label>
+                        </section>
+                    </section>
+                </form>
+            </section>
+            </section>
+        </section>
     </div>
 </main>
 
 <footer>
-    <div class="footer-section">
+    <div>
+        <section class="footer-section">
         <section class="footer-logo">
             <h3>Logo</h3>
             <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
@@ -57,7 +324,7 @@
 
 
         <section class="contact-info">
-            <h3>KONTAKT</h3>
+            <h4>KONTAKT</h4>
                 <p>
                     <img src="images/footer/location.png" alt="Adresse Icon" class="contact-icon">
                     <strong>Adresse:</strong> B R A Veien 4, 1757 Halden
@@ -77,7 +344,7 @@
         </section>
 
         <section class="shortcuts">
-            <h3>SNARVEIER</h3>
+            <h4>SNARVEIER</h4>
             <ul>
                 <li><a href="#produkter">Produkter</a></li>
                 <li><a href="#kategorier">Kategorier</a></li>
@@ -86,7 +353,7 @@
         </section>
 
         <section class="socials">
-            <h3>SOSIALE MEDIER</h3>
+            <h4>SOSIALE MEDIER</h4>
             <section class="social-icons">
                 <a href="https://instagram.com" target="_blank">
                     <img src="images/footer/instagram.png" alt="Instagram">
@@ -102,6 +369,7 @@
                 </a>
             </section>
         </section>
+    </section>
     </div>
 </footer>
 
