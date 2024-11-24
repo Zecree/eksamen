@@ -210,10 +210,6 @@ header section a img {
     cursor: pointer;
     font-weight: bold;
 }
-.scrollimg figcaption button a {
-    color: black;
-    text-decoration: none;
-}
 .scrollimg figcaption .read-more2 a {
     color: white;
     text-decoration: none;
@@ -285,11 +281,6 @@ header section a img {
     transition: background-color 0.3s, color 0.3s;
 }
 
-.product-buttons a {
-    text-decoration: none;
-    color: inherit;
-}
-
 .product-buttons:hover {
     background-color: rgb(100, 100, 100);
     color: white;
@@ -309,10 +300,6 @@ header section a img {
     transition: background-color 0.3s, color 0.3s;
 }
 
-.product-buttons2 a {
-    text-decoration: none;
-    color: inherit;
-}
 
 
 
@@ -746,7 +733,6 @@ footer section p {
 
     footer {
         flex-direction: column;
-        align-items: left;
         text-align: left;
     }
 
