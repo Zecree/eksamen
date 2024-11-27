@@ -4,40 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nettbutikk - Forside</title>
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
     <header>
         <div class="header-container">
-            <section class="nav">
+            <section class="nav" id="nav">
                 <section>
                     <form action="Search" class="search-bar">
                         <input type="text" placeholder="Søk her" aria-label="Search">
                         <button type="submit">
-                            <img src="images/header/search.png" alt="Product Image" class="search-icon">
+                            <img src="images/header/search.png" alt="image" class="search-icon">
                         </button>
                     </form>
                 </section>
     
                 <section>
                     <nav class="navigation">
-                        <a href="#home">Hjem</a>
-                        <a href="#products">Produkter</a>
-                        <a href="#logo" class="logo">Logo</a>
-                        <a href="#categories">Kategorier</a>
-                        <a href="#contact">Kontakt oss</a>
+                        <a href="index.html">Hjem</a>
+                        <a href="#produkter">Produkter</a>
+                        <a href="index.html" class="logo">Logo</a>
+                        <a href="#kategorier">Kategorier</a>
+                        <a href="#contact-info">Kontakt oss</a>
                     </nav>
                 </section>
     
                 <section class="header-icons">
-                    <a href="#profile">
-                        <img src="images/header/user.png" alt="User Profile">
+                    <a href="#">
+                        <img src="images/header/user.png" alt="profil">
                     </a>
-                    <a href="#wishlist">
-                        <img src="images/header/heart.png" alt="Wishlist">
+                    <a href="#">
+                        <img src="images/header/heart.png" alt="ønskeliste">
                     </a>
-                    <a href="#cart">
-                        <img src="images/header/cart.png" alt="Shopping Cart">
+                    <a href="checkout.html">
+                        <img src="images/header/cart.png" alt="handlevogn">
                     </a>
                 </section>
             </section>
@@ -45,11 +46,12 @@
     </header>
 
 <main>
+    <a href="#nav" class="gotop"><i class="fa-solid fa-arrow-up"></i></a>
     <div class="main-container">
         <section class="scrollbox">
-            <button class="arrow left-arrow">&lt;</button>
+            <button class="arrow left-arrow"><i class="fa-solid fa-arrow-left"></i></button>
             <figure class="scrollimg">
-                <img src="images/picture.png" alt="Banner Image">
+                <img src="images/picture.png" alt="banner">
                 <figcaption class="figcap1">
                     <h2>Et harum quidem rerum facilis est et expedita distinctio.</h2>
                     <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus.</p>
@@ -57,7 +59,7 @@
                 </figcaption>
             </figure>
             <figure class="scrollimg">
-                <img src="images/picture.png" alt="Banner Image">
+                <img src="images/picture.png" alt="banner">
                 <figcaption class="figcap2">
                     <h2>Et harum quidem rerum facilis est et expedita distinctio.</h2>
                     <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus.</p>
@@ -65,18 +67,18 @@
                 </figcaption>
             </figure>
             <figure class="scrollimg">
-                <img src="images/picture.png" alt="Banner Image">
+                <img src="images/picture.png" alt="banner">
                 <figcaption class="figcap3">
                     <h2>Et harum quidem rerum facilis est et expedita distinctio.</h2>
                     <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus.</p>
                     <button class="read-more">LES MER</button>
                 </figcaption>
             </figure>
-            <button class="arrow right-arrow">&gt;</button>
+            <button class="arrow right-arrow"><i class="fa-solid fa-arrow-right"></i></button>
         </section>
     </div>
     <div class="main-container2">
-        <section class="section2">
+        <section class="section2" id="produkter">
             <h2 class="sec2h2">Våre mest populære produkter</h2>
             <p>Oppdag det beste av det beste</p>
             <section class="productbuttons">
@@ -86,10 +88,10 @@
             </section>
             <section class="product-grid">
                 <section class="product-card">
-                    <img src="images/picture.png" alt="Product Image">
-                    <button class="heart">♡</button>
+                    <img src="images/picture.png" alt="image">
+                    <button class="heart"><i class="fa-regular fa-heart"></i></button>
                     <section class="product-info">
-                        <span class="product-name">Product Name</span>
+                        <span class="product-name"><a href="produkter.html">Product Name</a></span>
                         <span class="price">Kr 1999</span>
                     </section>        
                     <section class="reviews">
@@ -98,10 +100,10 @@
                     </section>
                 </section>
                 <section class="product-card">
-                    <img src="images/picture.png" alt="Product Image">
-                    <button class="heart">♡</button>
+                    <img src="images/picture.png" alt="image">
+                    <button class="heart"><i class="fa-regular fa-heart"></i></button>
                     <section class="product-info">
-                        <span class="product-name">Product Name</span>
+                        <span class="product-name"><a href="produkter.html">Product Name</a></span>
                         <span class="price">Kr 1999</span>
                     </section>        
                     <section class="reviews">
@@ -110,10 +112,10 @@
                     </section>
                 </section>
                 <section class="product-card">
-                    <img src="images/picture.png" alt="Product Image">
-                    <button class="heart">♡</button>
+                    <img src="images/picture.png" alt="image">
+                    <button class="heart"><i class="fa-regular fa-heart"></i></button>
                     <section class="product-info">
-                        <span class="product-name">Product Name</span>
+                        <span class="product-name"><a href="produkter.html">Product Name</a></span>
                         <span class="price">Kr 1999</span>
                     </section>        
                     <section class="reviews">
@@ -122,10 +124,10 @@
                     </section>
                 </section>
                 <section class="product-card">
-                    <img src="images/picture.png" alt="Product Image">
-                    <button class="heart">♡</button>
+                    <img src="images/picture.png" alt="image">
+                    <button class="heart"><i class="fa-regular fa-heart"></i></button>
                     <section class="product-info">
-                        <span class="product-name">Product Name</span>
+                        <span class="product-name"><a href="produkter.html">Product Name</a></span>
                         <span class="price">Kr 1999</span>
                     </section>        
                     <section class="reviews">
@@ -134,10 +136,10 @@
                     </section>
                 </section>
                 <section class="product-card">
-                    <img src="images/picture.png" alt="Product Image">
-                    <button class="heart">♡</button>
+                    <img src="images/picture.png" alt="image">
+                    <button class="heart"><i class="fa-regular fa-heart"></i></button>
                     <section class="product-info">
-                        <span class="product-name">Product Name</span>
+                        <span class="product-name"><a href="produkter.html">Product Name</a></span>
                         <span class="price">Kr 1999</span>
                     </section>        
                     <section class="reviews">
@@ -146,10 +148,10 @@
                     </section>
                 </section>
                 <section class="product-card">
-                    <img src="images/picture.png" alt="Product Image">
-                    <button class="heart">♡</button>
+                    <img src="images/picture.png" alt="image">
+                    <button class="heart"><i class="fa-regular fa-heart"></i></button>
                     <section class="product-info">
-                        <span class="product-name">Product Name</span>
+                        <span class="product-name"><a href="produkter.html">Product Name</a></span>
                         <span class="price">Kr 1999</span>
                     </section>        
                     <section class="reviews">
@@ -164,25 +166,25 @@
         <section class="section3">
             <h2 class="sec3h2">Våre mest populære produkter</h2>
             <p>Oppdag det beste av det beste</p>
-            <section class="kategorier">
+            <section class="kategorier" id="kategorier">
                 <section class="item1">
-                    <img src="images/picture.png" alt="Product Image">
+                    <img src="images/picture.png" alt="image">
                     <span class="category">CATEGORY 1</span>
                 </section>
                 <section class="item2">
-                    <img src="images/picture.png" alt="Product Image">
+                    <img src="images/picture.png" alt="image">
                     <span class="category">CATEGORY 2</span>
                 </section>
                 <section class="item3">
-                    <img src="images/picture.png" alt="Product Image">
+                    <img src="images/picture.png" alt="image">
                     <span class="category">CATEGORY 3</span>
                 </section>
                 <section class="item4">
-                    <img src="images/picture.png" alt="Product Image">
+                    <img src="images/picture.png" alt="image">
                     <span class="category">CATEGORY 4</span>
                 </section>
                 <section class="item5">
-                    <img src="images/picture.png" alt="Product Image">
+                    <img src="images/picture.png" alt="image">
                     <span class="category">CATEGORY 5</span>
                 </section>
             </section>
@@ -192,7 +194,7 @@
         <section class="scrollbox2">
             <section class="ann-sec">
                 <figure class="scrollimg2">
-                    <img src="images/picture.png" alt="Product Image">
+                    <img src="images/picture.png" alt="image">
                 </figure>
                 <span>Et harum quidem rerum facilis est et expedita distinctio.</span>
                 <p>★★★☆☆</p>
@@ -200,7 +202,7 @@
             </section>
             <section class="ann-sec">
                 <figure class="scrollimg2">
-                    <img src="images/picture.png" alt="Product Image">
+                    <img src="images/picture.png" alt="image">
                 </figure>
                 <span>Et harum quidem rerum facilis est et expedita distinctio.</span>
                 <p>★★★☆☆</p>
@@ -208,7 +210,7 @@
             </section>
             <section class="ann-sec">
                 <figure class="scrollimg2">
-                    <img src="images/picture.png" alt="Product Image">
+                    <img src="images/picture.png" alt="image">
                 </figure>
                 <span>Et harum quidem rerum facilis est et expedita distinctio.</span>
                 <p>★★★☆☆</p>
@@ -216,7 +218,7 @@
             </section>
             <section class="ann-sec">
                 <figure class="scrollimg2">
-                    <img src="images/picture.png" alt="Product Image">
+                    <img src="images/picture.png" alt="image">
                 </figure>
                 <span>Et harum quidem rerum facilis est et expedita distinctio.</span>
                 <p>★★★☆☆</p>
@@ -224,7 +226,7 @@
             </section>
             <section class="ann-sec">
                 <figure class="scrollimg2">
-                    <img src="images/picture.png" alt="Product Image">
+                    <img src="images/picture.png" alt="image">
                 </figure>
                 <span>Et harum quidem rerum facilis est et expedita distinctio.</span>
                 <p>★★★☆☆</p>
@@ -243,7 +245,7 @@
         </section>
 
 
-        <section class="contact-info">
+        <section class="contact-info" id="contact-info">
             <h4>KONTAKT</h4>
                 <p>
                     <img src="images/footer/location.png" alt="Adresse Icon" class="contact-icon">
@@ -268,7 +270,8 @@
             <ul>
                 <li><a href="#produkter">Produkter</a></li>
                 <li><a href="#kategorier">Kategorier</a></li>
-                <li><a href="#kontakt">Kontakt oss</a></li>
+                <li><a href="#contact-info">Kontakt oss</a></li>
+                <li><a href="WCAG.xlsx">WCAG Sjekkliste</a></li>
             </ul>
         </section>
 

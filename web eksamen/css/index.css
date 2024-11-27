@@ -215,10 +215,9 @@ header section a img {
     text-decoration: none;
 }
 
-
-
 .arrow {
-    text-align: center;
+    justify-content: center;
+    align-items: center;
     background: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(2px);
     height: 40px;
@@ -303,16 +302,6 @@ header section a img {
 
 
 
-.product-card .heart {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: transparent;
-    border: none;
-    font-size: 20px;
-    cursor: pointer;
-}
-
 
 section button {
     background: white;
@@ -328,11 +317,6 @@ section button {
     gap: 1rem;
 }
 
-.product-card {
-    background: white;
-    border-radius: 20px;
-    text-align: center;
-}
 
 .product-card {
     position: relative;
@@ -345,8 +329,8 @@ section button {
 
 .product-card .heart {
     position: absolute;
-    height: 30px;
-    width: 30px;
+    height: 32px;
+    width: 32px;
     top: 10px;
     right: 10px;
     background-color: rgb(199, 199, 199);
@@ -355,9 +339,7 @@ section button {
     font-size: 20px;
     cursor: pointer;
     border-radius: 50%;
-    text-align: center;
     color: white;
-    font-weight: bold;
 }
 
 
@@ -706,6 +688,7 @@ footer section p {
         display: flex;
         flex-direction: row;
     }
+
 
 
 
