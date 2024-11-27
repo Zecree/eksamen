@@ -21,8 +21,12 @@ for å få svar som:
 </a>
 
 Som da ikke ville fungere etter å ha validert.
+
 Ellers så har jeg brukt youtube, google og W3School:
 https://www.youtube.com/watch?v=HGeqO_8BlvY (details)
 https://www.youtube.com/watch?v=tv9ZR6Dw2js (horizontal slider)
 https://www.youtube.com/watch?v=9hnJsNIBq1g (søkebar)
 https://www.youtube.com/watch?v=2O8pkybH6po (form)
+
+
+https://github.com/Zecree/eksamen
